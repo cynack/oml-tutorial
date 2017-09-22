@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div(style="width:100%;height:100%;overflow:hidden;")
+    iframe(id="vrview" style="width:100%;height:100%;border:none;" src="view" display= "initial" width= "100%" height= "100%" scrolling="no" allowFullScreen)
+  script(src="socket.io/socket.io.js")
+  script(src="js/only_view.js")

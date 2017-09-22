@@ -1,0 +1,21 @@
+extends layout
+
+block head
+  style.
+    .QR-enter {
+      opacity: 0;
+    }
+    .QR-enter.QR-enter-active {
+      opacity: 1;
+      transition: opacity 300ms ease-in;
+    }
+    .QR-leave {
+      opacity: 1;
+    }
+    .QR-leave.QR-leave-active {
+      opacity: 0;
+      transition: opacity 300ms ease-in;
+    }
+block content
+  div#root(style="height:100%;")
+  script(src="js/index.js")
