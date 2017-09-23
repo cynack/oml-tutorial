@@ -10,51 +10,37 @@ import style from './index.css';
 
 let socket;
 let vrview;
-const defaultData = `
-{
-	"version": "^0.0.2",
-	"group": [{
-		"group": [{
-			"component": "@cube",
-			"size": [0.5,2,0.5],
-			"pos": [-1,1,0],
-			"color":"#ff0000"
-		},{
-			"component": "@cube",
-			"size": [0.5,2,0.5],
-			"pos": [-0.25,0.25,0],
-			"color":"#ff0000",
-			"rot": [0,0,90]
-		},{
-			"component": "@cube",
-			"size": [0.5,2,0.5],
-			"pos": [1.5,2,0],
-			"color":"#ff0000"
-		},{
-			"component": "@cube",
-			"size": [0.5,2,0.5],
-			"pos": [0.75,2.75,0],
-			"color":"#ff0000",
-			"rot": [0,0,90]
-		},{
-			"component": "@cube",
-			"size": [0.5,1.45,0.5],
-			"pos": [-0.6,2.3,0],
-			"color":"#ff0000",
-			"rot": [0,0,-45]
-		},{
-			"component": "@cube",
-			"size": [0.5,1.45,0.5],
-			"pos": [1.1,0.7,0],
-			"color":"#ff0000",
-			"rot": [0,0,-45]
-		}],
-		"pos": [0,0,0]
-	},{
-		"component": "@plane",
-		"size": [50,50]
-	}],
-	"pos": [0,0,6]
+const defaultData = `{
+  "version": "^0.0.1",
+  "group":[{
+      "component":"@halfo",
+      "pos":[0,0,6]
+  },{
+      "component":"@halfo",
+      "pos":[0,3.0253,6],
+      "rot":[0,0,180]
+  }],
+  "define":{
+      "@halfo":{
+          "group":[{
+              "component":"@cube",
+              "scale":[2,0.5,0.5],
+              "pos":[0.51265,2.7753,0],
+              "color":"#FF0000"
+          },{
+              "component":"@cube",
+              "scale":[0.5,2,0.5],
+              "pos":[1.26265,2.0253,0],
+              "color":"#FF0000"
+          },{
+              "component":"@cube",
+              "scale":[0.5,1.45,0.5],
+              "pos":[0.813325,0.686325,0],
+              "color":"#FF0000",
+              "rot":[0,0,-45]
+          }]
+      }
+  }
 }`;
 
 class App extends React.Component {
