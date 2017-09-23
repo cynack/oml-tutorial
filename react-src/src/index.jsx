@@ -90,7 +90,7 @@ class App extends React.Component {
             <div className={style.alertwrap}>
             <div className={style.alertback}>
               <div className={style.alertcard}>
-                <p>This is quick tutorial is for the Object Markup Language.</p>
+                <p>This is quick Object Markup Language tutorial.</p>
                 <p>Some components cannot be used even though they are defined in the document.</p>
                 <p>The recommended browser is Google Chrome.</p>
                 <div className={style.alertclose} ><button onClick={()=>{this.setState({alert:false})}} >CLOSE</button></div>
